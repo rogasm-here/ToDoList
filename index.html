@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>NoteFlix</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="Screenshot_2023-09-26_1652490-removebg-preview.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is a todo webpage with meta tags">
+  <meta name="keywords" content="HTML, todo, tags, example">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="navbar">
+      <div class="navbar_left">
+        <div class="nav_span"><a href="index.html">Home</a></div>
+        <div class="nav_span"><a href="index.html">About us</a></div>
+      </div>
+      <div class="navbar_right">
+        <form action="/search" method="GET">
+          <div class="search-container">
+            <input type="text" name="query" placeholder="Search note by name" required><a href="#input-box"></a>
+            <i class="fas fa-search"></i>
+            <button type="submit">Search</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="desContainer">
+    <div class="desContainer1">
+      <div class="desContainerHead">
+        <h1>Welcome to <span style="color: #0066FF;">"NoteFlix"</span></h1>
+      </div>
+      <div class="desContainerBody">
+        <h3>
+          <span class="text first-text">You can</span>
+          <span class="text second-text"></span>
+        </h3>
+      </div>
+
+      <div class="desContainerDes">
+        <p>NoteFlix is a versatile web application designed to simplify and enhance your note-taking experience. Whether
+          you're a student, professional, or simply someone who loves to jot down ideas, NoteFlix provides an intuitive
+          and secure platform for creating, storing, and managing your notes. With its user-friendly interface and
+          powerful features, NoteFlix is here to revolutionize the way you organize your thoughts.</p>
+      </div>
+    </div>
+
+    <div class="desContainer2">
+      <img src="Screenshot 2023-09-26 165249.png" alt="">
+    </div>
+  </div>
+
+
+  <div class="todo-container">
+    <div class="todo-app">
+      <h2>To-Do List</h2>
+      <div class="row">
+        <input type="text" id="input-box" placeholder="Add your task">
+      </div>
+      <span class="row1"><button onclick="addTask()">Add</button></span>
+      <ul id="list-container">
+        <!-- <li class="checked">Task 1</li>
+              <li>Task 2</li>
+              <li>Task 3</li> -->
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-first">
+      <p>Connect with us</p>
+    </div>
+
+    <div class="footer-second">
+      <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+        <i class="fa-brands fa-youtube fa-bounce fa-2x"></i>
+      </a>
+
+      <a target="_blank" href="https://twitter.com/rogasmic">
+        <i class="fa-brands fa-twitter fa-bounce fa-2x"></i>
+      </a>
+
+      <a target="_blank" href="https://www.instagram.com/rogasmic/">
+        <i class="fa-brands fa-instagram fa-bounce fa-2x"></i>
+      </a>
+      
+  </div>
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
